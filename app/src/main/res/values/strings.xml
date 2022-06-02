@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Happy Sensors</string>
+
+    <string-array name="Sensor_List">
+        <item>Accelerometer</item>
+        <item>Gyroscope</item>
+        <item>Depth Sensor</item>
+        <item>Ambient light Sensor</item>
+    </string-array>
+</resources>

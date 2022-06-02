@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/sensorList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"/>
+    <LinearLayout
+        android:id="@+id/GyroscopeLayout"
+        android:layout_width="197dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- All content which you hide/show put here -->
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint='X values'
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint='Y values'
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint='Z values'
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/MagneticLayout"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <!-- All content which you hide/show put here -->
+
+        <TextView
+            android:id="@+id/compassOrientation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="30sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/compass"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/compass" />
+
+        <TextView
+            android:id="@+id/magneticView1"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="left"
+            android:text="TextView"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/magneticView2"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="left"
+            android:text="TextView"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/magneticView3"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="left"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LightLayout"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:orientation="vertical">
+
+        <!-- All content which you hide/show put here -->
+
+        <TextView
+            android:id="@+id/LightView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="bottom|center_horizontal"
+            android:textSize="40sp"
+            android:text="Sensor Value: NONE" />
+
+        <TextView
+            android:id="@+id/LightInterpretation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:text="Light: \nUNKOWN" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/HumidityLayout"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:orientation="vertical">
+
+        <!-- All content which you hide/show put here -->
+
+        <TextView
+            android:id="@+id/HumidityView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="bottom|center_horizontal"
+            android:textSize="40sp"
+            android:text="Sensor Value: NONE" />
+
+        <TextView
+            android:id="@+id/PressureView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:text="Humidity: NONE" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ProximityLayout"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:orientation="vertical">
+
+        <!-- All content which you hide/show put here -->
+
+        <TextView
+            android:id="@+id/ProximityView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="bottom|center_horizontal"
+            android:textSize="40sp"
+            android:text="Distance to Object: NONE" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item1"
+        android:title="Sensor List"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/item2"
+        android:title="Gyroscope"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item3"
+        android:title="Magnetic Field Sensor"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/item4"
+        android:title="Light Sensor"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/item5"
+        android:title="Humidity/Pressure Sensor"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/item6"
+        android:title="Proximity Sensor"
+        app:showAsAction="never"/>
+</menu>
